@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <script>
+        // Function to display a message
+        function generateRandomNumber() {
+            const randomNumber = Math.floor(Math.random() * 100) + 1;
+            alert('Random Number: ' + randomNumber);
+        }
+
+        // Function to toggle message visibility
+        function toggleMessage() {
+            const message = document.getElementById('toggleMessage');
+            if (message.style.display === 'none') {
+                message.style.display = 'block';
+            } else {
+                message.style.display = 'none';
+            }
+        }
+        function showMessage() {
+            console.log('Hello, this is a JavaScript message!');
+            alert('Hello, this is a JavaScript alert!');
+        }
+
+        // Function to change the background color
+        function changeBackgroundColor() {
+            document.body.style.backgroundColor = 'lightblue';
+        }
+    </script>
+</head>
+<body>
+    <h1>Welcome to the JavaScript Example</h1>
+    <button onclick="showMessage()">Click Me!</button>
+    <button onclick="changeBackgroundColor()">Change Background Color</button>
+    <button onclick="generateRandomNumber()">Generate Random Number</button>
+    <button onclick="toggleMessage()">Toggle Message</button>
+    <div id="toggleMessage" style="display: none;">This is a toggled message!</div>
+</body>
+</html>
+</create_file>
